@@ -1,15 +1,5 @@
 import { Chart } from 'chart.js';
 
-interface User {
-    username: string;
-    password: string;
-}
-
-const user: User = {
-    username: 'testing',
-    password: 'test'
-}
-
 const ctx: HTMLCanvasElement = <HTMLCanvasElement> document.getElementById('myChart');
 const chart = new Chart(ctx, {
     type: 'line',
